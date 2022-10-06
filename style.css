@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-body{
+.body{
  
     font-family: 'Montserrat', sans-serif;
 }
@@ -21,7 +21,7 @@ letter-spacing: 0.2px;
 color: #737373;
    
 }
-.header__menulist{
+.header__menu-list{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,7 +92,7 @@ text-align: center;
 letter-spacing: 0.2px;
 border-radius: 37px; 
 }
-.button--learnmore{
+.button--learn-more{
     background-color: white;
     color: #00A0C1;
 border-color: #00A0C1;
@@ -203,6 +203,12 @@ top: 65%;
 transform: translate(-50%, -50%);
 z-index: 1;
 }
+.testimonials__video--big-screen{
+    display: block;
+}
+.testimonials__video--small-screen{
+    display: none;
+}
 .testimonials__background-img{
     width: 100%;
     height: 100%;
@@ -236,7 +242,7 @@ justify-content: center;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
 }
-.clientcard{
+.client-card{
     display: flex;
 flex-direction: row;
 align-items: center;
@@ -249,7 +255,7 @@ background: #FFFFFF;
 border: 1px solid #DEDEDE;
 border-radius: 5px;
 }
-.clientcard{
+.client-card{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -259,27 +265,27 @@ line-height: 24px;
 font-weight: 600;
 letter-spacing: 0.2px;
 }
-.clientcard__message{
+.client-card__message{
    
 font-size: 14px;
 line-height: 24px;
 letter-spacing: 0.2px;
 color: #737373;
 }
-.clientcard__profile{
+.client-card__profile{
     display: flex;
     align-items: center;
 }
-.clientcard__credentials{
+.client-card__credentials{
     display: flex;
     flex-direction: column;
     margin-left: 5px;
     gap: 2px;
 }
-.clientcard__name{
+.client-card__name{
     color: #FFA62B;
 }
-.clientcard__profession{
+.client-card__profession{
     color: #252B42;
 }
 .teamsection{
@@ -293,6 +299,9 @@ justify-content: center;
     font-weight: 700;
     font-size: 40px;
     line-height: 57px;
+}
+.title--mobile{
+    display: none;
 }
 .subtitle--team{
     font-weight: 500;
@@ -454,7 +463,7 @@ text-align: left;
 
     
 }
-.footer__logosection{
+.footer__logo-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -486,7 +495,7 @@ border: 1px solid #364067;
   
 }
 
-.footer__companyinfo{
+.footer__company-info{
     list-style: none;
 }
 
@@ -533,5 +542,69 @@ background: #16697A;
     font-weight: 600;
 font-size: 14px;
 line-height: 24px;
+
+}
+@media only screen and (max-width: 480px) {
+    .heropage{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+.title--heropage{
+    font-weight: 700;
+font-size: 40px;
+line-height: 57px;
+line-spacing:0.1px;
+}
+.title__breakline{
+    display: none;
+}
+.subtitle__breakline{
+    display: none;
+}
+.heropage__buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.marketing{
+    height: auto;
+    padding-bottom: 30px;
+}
+.marketing__cards{
+    grid-template-rows: auto;
+    grid-template-columns: none;
+}
+.title--mobile{
+    display: block;
+    margin-bottom: 15px;
+
+}
+.title__big-screen{
+    display: none;
+}
+.testimonials__video--big-screen{
+    display: none;
+}
+.testimonials__video--small-screen{
+    display: block;
+}
+.client-section__cards{
+    grid-template-rows: auto;
+    grid-template-columns: none;
+
+}
+.client-section{
+    height: auto;
+    padding-bottom: 20px;
+}
+.teamsection{
+    height: auto;
+    padding-bottom: 20px;
+}
+.teamsection__teamcards{
+    grid-template-rows: auto;
+    grid-template-columns: none;
+
+}
 
 }
