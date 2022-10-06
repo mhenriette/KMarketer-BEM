@@ -426,15 +426,14 @@ margin-bottom: 40px;
     height: 58px;
     border-radius: 5px;
 }
-.appointment__agency{
-    position: absolute;
+.consulting-section{
+
 height: 100px;
 display: flex;
 
 background: #FAFAFA;
 width: 100%;
 
-bottom: 0;
 justify-content: space-around;
 align-items: center;
 }
@@ -544,7 +543,13 @@ font-size: 14px;
 line-height: 24px;
 
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 630px) {
+    .header__item{
+        display: none;
+    }
+    .header__item--icon{
+        display: flex;
+    }
     .heropage{
         margin-left: 10px;
         margin-right: 10px;
@@ -606,5 +611,86 @@ line-spacing:0.1px;
     grid-template-columns: none;
 
 }
+.appointment{
+    height: 900px;
+    
+    position: relative;
+    }
+    .appointment__form{
+       top: auto;
+       place-items: center;
+      
+       padding-top: 50px;
+        position: relative;
+        border-radius: 10px;
+        transform: translate(-50%, -0%);
 
+        left: 45%;
+    }
+        .appointment__title{
+            font-size: 30px;
+        }
+        .appointment__fillform{
+            display: flex;
+            flex-direction: column;
+        }
+        .appointment__input--message {
+            width: 100%;
+            height: 140px;
+        }
+        .consulting-section{
+            height: 200px;
+            flex-direction: column;
+            display: flex;
+        }
+        .subtitle--agency{
+            text-align: center;
+        }
+        .footer{
+            height: auto;
+            padding: 3rem;
+        }
+        .footer__list{
+            grid-template-columns: repeat(1, minmax(0, 13.5rem));
+            gap: 40px;
+        }
+        .appointment__form{
+            width: auto;
+        }
+      
+            
+}
+@media only screen and (min-width:631px) and (max-width: 1115px) {
+    .marketing{
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .marketing__cards{
+       
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        
+    }
+    .testimonials__video--big-screen {
+        
+        width: 70%;
+    }
+    .client-section{
+        height: auto;
+    }
+    .client-section__cards{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .teamsection{
+        height: auto;
+    }
+    .teamsection__teamcards{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .footer{
+        height: auto;
+    }
+    .footer__list{
+        grid-template-columns: repeat(3, minmax(0, 13.5rem));
+        gap: 40px;
+    }
 }
