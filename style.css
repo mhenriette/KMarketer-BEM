@@ -525,7 +525,7 @@ border-radius: 0px 5px 5px 0px;
     border: 1px solid #E6E6E6;
 border-radius: 5px 0px 0px 5px;
 }
-.footer__copyright{
+.copyright{
     height: 60px;
 left: 0px;
 right: 0px;
@@ -536,7 +536,7 @@ padding-left: 5rem;
 
 background: #16697A;
 }
-.footer__subtitle{
+.copyright__title{
     color: white;
     font-weight: 600;
 font-size: 14px;
@@ -584,7 +584,7 @@ line-spacing:0.1px;
     margin-bottom: 15px;
 
 }
-.title__big-screen{
+.title--big-screen{
     display: none;
 }
 .testimonials__video--big-screen{
