@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.body{
+ 
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    align-items: center;
+    margin: 25px;
+    justify-content: space-between;
+    font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+
+text-align: center;
+letter-spacing: 0.2px;
+color: #737373;
+   
+}
+.header__menu-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.header__item{
+    margin-right: 25px;
+}
+.heropage{
+
+    height: 90vh;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+  
+}
+.title{
+    font-style: normal;
+
+    text-align: center;
+    letter-spacing: 0.2px;
+    
+    color: #252B42;
+
+}
+.title--heropage{
+    letter-spacing: 0.2px;
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    margin-bottom: 40px;
+}
+.subtitle{
+   
+text-align: center;
+
+color: #737373;
+font-weight: 500;
+letter-spacing: 0.2px;
+
+}
+.subtitle--heropage{
+   
+    font-size: 20px;
+line-height: 30px;
+
+margin-bottom: 40px;
+
+}
+
+.button{
+background: #FFA62B;
+
+padding: 10px 36px;
+border-color: none;
+color:white;
+border: none;
+font-weight: 700;
+font-size: 14px;
+line-height: 28px;
+text-align: center;
+letter-spacing: 0.2px;
+border-radius: 37px; 
+}
+.button--learn-more{
+    background-color: white;
+    color: #00A0C1;
+border-color: #00A0C1;
+border: 1px solid #00A0C1;
+margin-left: 5px;
+
+
+}
+.marketing{
+    height: 100vh;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.title--marketing{
+    font-weight: 700;
+font-size: 40px;
+line-height: 57px;
+letter-spacing: 0.2px;
+}
+.subtitle--marketing{
+ 
+font-size: 14px;
+line-height: 20px;
+
+text-align: center;
+margin-bottom: 40px;
+
+}
+.marketing__cards{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+.card{
+    box-sizing: border-box;
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 35px 40px;
+gap: 15px;
+
+width: 328px;
+height: 193px;
+
+background: #FFFFFF;
+border: 1px solid #E8E8E8;
+}
+.card__header{
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+}
+.card__title{
+    margin-left: 15px;
+  
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.1px;
+
+color: #252B42;
+}
+.card__subtitle{
+    font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.2px;
+
+color: #737373;
+}
+.testimonials{
+
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 791px;
+position: relative;
+background: #FAFAFA;
+}
+.title--testimonials{
+    font-weight: 700;
+font-size: 40px;
+line-height: 57px;
+
+text-align: center;
+letter-spacing: 0.2px;
+margin-bottom: 20px;
+}
+.subtitle--testimonials{
+    font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+
+text-align: center;
+letter-spacing: 0.2px;
+margin-bottom: 20px;
+}
+.testimonials__video{
+    position: absolute;
+left: 50%;
+top: 65%;
+transform: translate(-50%, -50%);
+z-index: 1;
+}
+.testimonials__video--big-screen{
+    display: block;
+}
+.testimonials__video--small-screen{
+    display: none;
+}
+.testimonials__background-img{
+    width: 100%;
+    height: 100%;
+}
+.testimonials__welcome{
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding: 80px 0px;
+position: absolute;
+top: 0px;
+
+}
+.testimonials__background{
+    position: absolute;
+    height: 382px;
+    left: 0px;
+    right: 0px;
+    top: 409px;
+}
+.client-section{
+    height: 100vh;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+ background: #F3F3F3;
+}
+.client-section__cards{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+.client-card{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 30px 35px;
+
+width: 327px;
+height: 244px;
+justify-content: center;
+background: #FFFFFF;
+border: 1px solid #DEDEDE;
+border-radius: 5px;
+}
+.client-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 14px;
+line-height: 24px;
+font-weight: 600;
+letter-spacing: 0.2px;
+}
+.client-card__message{
+   
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.2px;
+color: #737373;
+}
+.client-card__profile{
+    display: flex;
+    align-items: center;
+}
+.client-card__credentials{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    gap: 2px;
+}
+.client-card__name{
+    color: #FFA62B;
+}
+.client-card__profession{
+    color: #252B42;
+}
+.teamsection{
+    height: 100vh;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.title--team{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+}
+.title--mobile{
+    display: none;
+}
+.subtitle--team{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.teamsection__teamcards{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+
+}
+.team{
+    box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+width: 328px;
+height: 373px;
+
+background: #FFFFFF;
+border: 1px solid #EEEEEE;
+
+line-height: 24px;
+
+text-align: center;
+letter-spacing: 0.1px;
+}
+.team__credentials{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.team__name{
+    color: #252B42;
+    font-weight: 700;
+font-size: 16px;
+}
+.team__profession{
+    color: #737373;
+    font-weight: 600;
+font-size: 14px;
+}
+.team__socialmedia{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+.team__icon{
+    margin-left: 15px;
+
+}
+.appointment{
+height: 100vh;
+background-image: url('img/appointment.png');
+background-position: top;
+background-size: cover;
+position: relative;
+}
+.appointment__form{
+   
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+
+
+width: 602px;
+height: 579px;
+
+border-radius: 10px;
+}
+.appointment__fillform{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.appointment__contact{
+    font-weight: 700;
+    font-size: 16px;
+line-height: 24px;
+color: #252B42;
+
+}
+.appointment__title{
+    font-weight: 700;
+font-size: 40px;
+line-height: 57px;
+text-align: center;
+letter-spacing: 0.2px;
+color: #252B42;
+
+}
+.appointment__input{
+    box-sizing: border-box;
+background: #F9F9F9;
+border: 1px solid #BDBDBD;
+border-radius: 5px;
+width: 285px;
+height: 50px;
+margin-right: 5px;
+padding-left: 5px;
+margin-bottom: 10px;
+}
+.appointment__input--message{
+    width: 580px;
+height: 140px;
+margin-bottom: 40px;
+}
+.button--appointment {
+    padding: 15px 40px;
+    width: 218px;
+    height: 58px;
+    border-radius: 5px;
+}
+.consulting-section{
+
+height: 100px;
+display: flex;
+
+background: #FAFAFA;
+width: 100%;
+
+justify-content: space-around;
+align-items: center;
+}
+.title--agency{
+    font-size: 24px;
+line-height: 32px;
+letter-spacing: 0.1px;
+}
+.subtitle--agency{
+    font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.1px;
+text-align: left;
+}
+.footer{
+    width: 100%;
+    height: 500px;
+    
+  color: white;
+    background: #252B42;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    box-sizing: border-box;
+    padding: 5rem;
+
+    
+}
+.footer__logo-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__logo{
+    font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0.1px;
+}
+.footer__medialist{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: baseline;
+   
+
+}
+.footer__border{
+    width: auto;
+height: 0px;
+
+border: 1px solid #364067;
+}
+.footer__list{
+    
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 13.5rem));
+  
+}
+
+.footer__company-info{
+    list-style: none;
+}
+
+.footer__item{
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.2px;
+color: #BDBDBD;
+margin-bottom: 7px;
+    }
+.footer__item--title{  
+        font-weight: 700;
+  margin-bottom: 15px;
+        font-size: 16px;
+      line-height: 24px;
+      color: white;
+  }
+  .footer__button{
+    display: flex;
+
+  }
+  .button--footer{
+    border: 1px solid #E6E6E6;
+border-radius: 0px 5px 5px 0px;
+  }
+.footer__email-input{
+    border: 1px solid #E6E6E6;
+border-radius: 5px 0px 0px 5px;
+}
+.copyright{
+    height: 60px;
+left: 0px;
+right: 0px;
+top: 452px;
+display: flex;
+align-items: center;
+padding-left: 5rem;
+
+background: #16697A;
+}
+.copyright__title{
+    color: white;
+    font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+
+}
+@media only screen and (max-width: 630px) {
+    .header__item{
+        display: none;
+    }
+    .header__item--icon{
+        display: flex;
+    }
+    .heropage{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+.title--heropage{
+    font-weight: 700;
+font-size: 40px;
+line-height: 57px;
+line-spacing:0.1px;
+}
+.title__breakline{
+    display: none;
+}
+.subtitle__breakline{
+    display: none;
+}
+.heropage__buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.marketing{
+    height: auto;
+    padding-bottom: 30px;
+}
+.marketing__cards{
+    grid-template-rows: auto;
+    grid-template-columns: none;
+}
+.title--mobile{
+    display: block;
+    margin-bottom: 15px;
+
+}
+.title--big-screen{
+    display: none;
+}
+.testimonials__video--big-screen{
+    display: none;
+}
+.testimonials__video--small-screen{
+    display: block;
+}
+.client-section__cards{
+    grid-template-rows: auto;
+    grid-template-columns: none;
+
+}
+.client-section{
+    height: auto;
+    padding-bottom: 20px;
+}
+.teamsection{
+    height: auto;
+    padding-bottom: 20px;
+}
+.teamsection__teamcards{
+    grid-template-rows: auto;
+    grid-template-columns: none;
+
+}
+.appointment{
+    height: 900px;
+    
+    position: relative;
+    }
+    .appointment__form{
+       top: auto;
+       place-items: center;
+      
+       padding-top: 50px;
+        position: relative;
+        border-radius: 10px;
+        transform: translate(-50%, -0%);
+
+        left: 45%;
+    }
+        .appointment__title{
+            font-size: 30px;
+        }
+        .appointment__fillform{
+            display: flex;
+            flex-direction: column;
+        }
+        .appointment__input--message {
+            width: 100%;
+            height: 140px;
+        }
+        .consulting-section{
+            height: 200px;
+            flex-direction: column;
+            display: flex;
+        }
+        .subtitle--agency{
+            text-align: center;
+        }
+        .footer{
+            height: auto;
+            padding: 3rem;
+        }
+        .footer__list{
+            grid-template-columns: repeat(1, minmax(0, 13.5rem));
+            gap: 40px;
+        }
+        .appointment__form{
+            width: auto;
+        }
+      
+            
+}
+@media only screen and (min-width:631px) and (max-width: 1115px) {
+    .marketing{
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .marketing__cards{
+       
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        
+    }
+    .testimonials__video--big-screen {
+        
+        width: 70%;
+    }
+    .client-section{
+        height: auto;
+    }
+    .client-section__cards{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .teamsection{
+        height: auto;
+    }
+    .teamsection__teamcards{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .footer{
+        height: auto;
+    }
+    .footer__list{
+        grid-template-columns: repeat(3, minmax(0, 13.5rem));
+        gap: 40px;
+    }
+}
